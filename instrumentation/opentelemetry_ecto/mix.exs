@@ -12,6 +12,11 @@ defmodule OpentelemetryEcto.MixProject do
       aliases: aliases(),
       elixirc_paths: elixirc_paths(Mix.env()),
       package: package(),
+      docs: [
+        main: "OpentelemetryOban",
+        extras: ["README.md", "CHANGELOG.md"],
+        skip_undefined_reference_warnings_on: ["README.md"]
+      ],
       source_url:
         "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/instrumentation/opentelemetry_ecto"
     ]
@@ -28,8 +33,10 @@ defmodule OpentelemetryEcto.MixProject do
       links: %{
         "GitHub" =>
           "https://github.com/open-telemetry/opentelemetry-erlang-contrib/tree/main/instrumentation/opentelemetry_ecto",
+        "Changelog" => "https://hexdocs.pm/opentelemetry_ecto/changelog",
         "OpenTelemetry Erlang" => "https://github.com/open-telemetry/opentelemetry-erlang",
-        "OpenTelemetry Erlang Contrib" => "https://github.com/open-telemetry/opentelemetry-erlang-contrib",
+        "OpenTelemetry Erlang Contrib" =>
+          "https://github.com/open-telemetry/opentelemetry-erlang-contrib",
         "OpenTelemetry.io" => "https://opentelemetry.io"
       }
     ]

@@ -10,7 +10,8 @@ defmodule OpentelemetryOban.MixProject do
       deps: deps(),
       docs: [
         main: "OpentelemetryOban",
-        extras: ["README.md"]
+        extras: ["README.md", "CHANGELOG.md"],
+        skip_undefined_reference_warnings_on: ["README.md"]
       ],
       elixirc_paths: elixirc_paths(Mix.env()),
       package: [
@@ -20,6 +21,7 @@ defmodule OpentelemetryOban.MixProject do
         licenses: ["Apache-2.0"],
         links: %{
           "GitHub" => "https://github.com/open-telemetry/opentelemetry-erlang-contrib",
+          "Changelog" => "https://hexdocs.pm/opentelemetry_oban/changelog",
           "OpenTelemetry Erlang" => "https://github.com/open-telemetry/opentelemetry-erlang",
           "OpenTelemetry.io" => "https://opentelemetry.io"
         },
